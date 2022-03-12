@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root{
+    --title-color: hsl(210, 10%, 33%);
+    --text-color:hsl(201, 11%, 66%);
+}
+body{
+    Font-size: 18px;
+    width: 100%;
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-image: url(/images/bg-header-desktop.png);
+    background-repeat: repeat-x;
+    overflow-x: hidden;
+}
+/* start header*/
+header{
+    text-align: center;
+    margin: 50px 25%;
+}
+header .title{
+    color:  var(--title-color);
+    font-size: 36px;
+    font-weight: 600;
+}
+header .text{
+    color:  var(--text-color);
+}
+button{
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px 55px;
+    border-radius: 10pc;
+    text-align: center;
+    margin-bottom: 10px;
+}
+button:hover{
+    cursor: pointer;
+}
+.button1{
+    background-color: hsl(171, 66%, 44%);
+    margin-right: 5px;
+    box-shadow: 0 3px hsl(171, 56.8%, 34.5%);
+}
+.button2{
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 0 3px hsl(233.4, 49.8%, 53.1%);
+}
+header .title2-head{
+    margin-top: 100px;
+    font-size: 31px;
+    color:  var(--title-color);
+    font-weight: 600;
+}
+header .text2-head{
+    color:var(--text-color);
+    font-size: 17px;
+}
+/* end header*/
+/* start info1*/
+.info1{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+.info1 img{
+    width: 750px;
+    height: 550px;
+    position: relative;
+    left: -94px;
+}
+.info1 .card{
+    text-align: left;
+    line-height: 26px;
+    margin-top: 20px;
+    padding-right: 192px;
+}
+.info1 .card .card-title{
+    margin-top:37px ;
+    font-size: 27px;
+    font-weight: 600;
+    color:   var(--title-color);
+}
+.info1 .card .text{
+    color:   var(--text-color);
+    font-weight: 400;
+}
+/* end info1*/
+/* start info2*/
+.info2{
+    margin-top: 120px;
+    text-align: center;
+    margin-right:14px ;
+}
+.info2 .title{
+    font-size: 36px;
+    font-weight: 600;
+    margin: 2px 25%;
+    color:  var(--title-color);
+}
+.info2 .text{
+    color:   var(--text-color);
+    margin: 2px 25%;
+}
+.info2 img{
+    margin-top: 90px;
+    text-align: center;
+}
+/* end info2*/
+/* start info3*/
+.info3{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: space-between;
+    align-content: space-around;
+    margin-right:14px ;
+}
+.info3 div .title{
+    font-size: 22px;
+    font-weight: 600;
+    width: 90%;
+    color: var(--title-color);
+    text-align: center;
+    
+}
+.info3 div .title img{
+    margin-bottom: 40px;
+}
+.info3 div .text{
+    color:  hsl(201, 11%, 66%);
+    width: 90%;
+    text-align: center;
+}
+/* end info3*/
+.image{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+/* start info4*/
+.info4{
+    margin-top: 120px;
+}
+.info4 .title{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 2px 23%;
+    color: var(--title-color);
+    text-align: center;
+}
+.info4 .text{
+    text-align: center;
+    color:  hsl(201, 11%, 66%);
+    margin: 2px 23%;
+}
+.info4 .buttons{
+    margin-top: 30px;
+    text-align: center;
+}
+/* end info4*/
+/* start footer*/
+footer{
+    justify-content: space-around;
+    margin-right: 14px;
+    padding-top: 30px;
+    margin-top: 60px;
+    background-color:  hsl(201, 33%, 92%) ;
+    font-size: 16px;
+    color: var(--text-color);
+    position: relative;
+}
+footer div{
+    display: flex;
+}
+.icons{
+    position: absolute;
+    right:  170px;
+}
+.icon{
+    color: black;
+    padding-left: 10px;
+}
+footer div div .title,footer div div .text {
+    padding-right: 32px;
+    padding-left: 32px;
+    display: flex;
+    flex-direction: column;
+}
+.links:hover{
+    color: hsl(171, 66%, 44%);
+    cursor: pointer;
+}
+/* end footer*/
+
+/*Version Mobile*/
+@media (max-width:884px) {
+    /*start header*/
+    header{
+        margin: 50px auto ;
+        padding: 0px 5px;
+    }
+    header img{
+        width: 120px;
+        text-align: center;
+    }
+    header .text2-head{
+        margin-right: 15px;
+    }
+    header button{
+        margin-bottom: 20px;
+    }
+    /* end header*/
+    /* start info1*/
+    .info1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right:18px ;
+    }
+    .info1 img{
+        width: 290px;
+        height: 250px;
+        position: static;
+    }
+    /* end info1*/
+    /* start info2*/
+    .info1 .card{
+        padding-right: 0;
+        text-align: center;
+    }
+    .info2 .title{
+        margin: 0 5px;
+    }
+    .info2 .text{
+        margin: 2pc 5px;
+    }
+    .info2 img{
+        width: 280px;
+        height: 280x;
+        margin-bottom: 50px;
+    }
+    /* end info2*/
+    /* start info3*/
+    .info3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .info3 div .title{
+        margin: 0 auto;
+    }
+    .info3 div .text{
+        margin: 0 auto 45px;
+    }
+    /* end info3*/
+    /* start images*/
+    .image{
+        display: flex;
+        flex-direction: column;
+        margin: 0 80px;
+        align-items: center;
+    }
+    .image img{
+        margin-bottom: 80px;
+        width: 200px;
+        height: 240x;
+        text-align: center;
+    }
+    /* end images*/
+    /* start info4*/
+    .info4{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .info4 .title{
+        margin: 2px 40px;
+    }
+    .info4 .text{
+        margin: 2px 14px 2px 0px;
+        padding: 0 0;
+    }
+    /* end info4*/
+    /* start footer*/
+    footer div{
+        display: flex;
+        margin: 8px auto;
+        flex-direction: column;
+        justify-items: center;
+    }
+    footer div .icons .icon{
+        display: flex;
+        position: static;
+        height: 18px;
+        width: 18px;
+    }
+    footer div .icons{
+        position: static;
+        flex-direction: row;
+    }
+    footer div .about img{
+        width: 45px;
+        height: 45px;
+    }
+    footer div div .title,.text {
+        padding-right: 0px;
+        padding-left: 0px ;
+    }
+    /* end footer*/
+}
