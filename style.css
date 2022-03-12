@@ -41,6 +41,7 @@ button{
 }
 button:hover{
     cursor: pointer;
+    opacity: 0.8;
 }
 .button1{
     background-color: hsl(171, 66%, 44%);
